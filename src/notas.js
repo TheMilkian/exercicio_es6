@@ -1,13 +1,26 @@
 const alunos = [
-  { nome: "Ana", nota: 8 },
-  { nome: "Bruno", nota: 5 },
-  { nome: "Carlos", nota: 6 },
-  { nome: "Daniela", nota: 9 },
-  { nome: "Eduardo", nota: 4 }
+  { nome: "João", nota: 7}, 
+  { nome: "Márcio", nota: 4}, 
+  { nome: "Júlia", nota: 9}, 
+  { nome: "Carla", nota: 8}, 
+  { nome: "Daniel", nota: 7},
+  { nome: "Jonas", nota: 6},
+  { nome: "Flávia", nota: 3},
 ];
 
+
+
 const alunosAprovados = (listaDeAlunos) => {
-  return listaDeAlunos.filter(aluno => aluno.nota >= 6);
+  const aprovados = [];
+
+  for (const aluno of listaDeAlunos) {
+    if (aluno.nota >= 6) {
+      aprovados.push(aluno);
+    }
+  }
+
+  return aprovados;
 };
 
 console.log(alunosAprovados(alunos));
+
