@@ -4,6 +4,8 @@ const alunos = [
   { nome: "Júlia", nota: 9}, 
   { nome: "Carla", nota: 8}, 
   { nome: "Daniel", nota: 7}
+  { nome: "Jonas", nota: 6}
+  { nome: "Flávia", nota: 3}
 ];
 
 
